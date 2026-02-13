@@ -77,7 +77,7 @@
           <div class="p-4">
             <h2>Message Us</h2>
 
-            <form class="w-1/2" submitFunction(event)">
+            <form class="w-1/2" onsubmit="submitFunction(event)">
                 <table class=" border-separate border-spacing-4 w-full"> <!--Dibuat tabel agar rapih bentuknya-->
                     <tbody>
                         <tr>
@@ -107,15 +107,14 @@
                         </tr>
                     </tbody>
                 </table>
-                <br>
-                <button class="button text-blue-900 border-2 border-double border-blue-800 m-2 p-2 rounded-xl bg-blue-300 hover:bg-blue-400 font-semibold transition active:scale-95" type="submit">Submit</button>
+                <button class="button text-blue-900 border-2 border-double border-blue-800 mt-2 p-2 rounded-xl bg-blue-300 hover:bg-blue-400 font-semibold transition active:scale-95" type="submit">Submit</button>
             </form>
             <br>
 
             <p id="reply-message" class="font-semibold border-solid p-2 rounded-md"></p>
           </div>
-          <br>
         </section>
+        <br>
 
         <footer class="text-white text-end text-xs p-2 bg-indigo-900">Created by Fia for RevoU
             <br>
