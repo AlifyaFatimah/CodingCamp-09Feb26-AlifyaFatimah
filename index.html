@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="flex flex-row justify-between bg-indigo-800 sticky top-0 z-50">
-        <div class="p-2"><img class="h-10 w-auto object-contain" src="assets/logo.png" alt="logo healing"></div>
+        <div class="p-2"><img class="h-10 w-10 object-contain" src="assets/logo.png" alt="logo healing"></div>
         
         <nav class="text-2x1 text-white">
             <ul class="flex gap-8 flex-wrap m-4">
@@ -22,7 +22,7 @@
         </nav>
     </header>
     
-    <main class="text-justify">
+    <main class="text-justify text-sm/8">
         <section id="home" class="bg-blue-100">
             <div class="p-4">
                 <h2 id="welcome-speech"></h2>
@@ -45,6 +45,10 @@
                     <li>Distributing our books widely, reaching readers from coastal areas to mountain regions.</li>
                  </ol>
                 </p>
+
+                <h2>Our Story</h2>
+                <p>Elevate was created with a simple purpose: to make good books more accessible for everyone. We understand that many readers want books that are not only interesting, but also well-produced and comfortable to read. Through Elevate, we want to support the growth of reading habits and encourage people to spend their leisure time with books that bring value and positive impact.</p>
+                
             </div>
         </section>
 
@@ -52,17 +56,17 @@
             <div class="p-4">
             <h2>Our Product</h2>
              <ol>
-                <li class="text-center font-bold text-blue-800 mt-2 mb-2 border-2 border-blue-800 bg-blue-100">Book</li>
+                <li class="text-lg text-center font-bold text-blue-800 mt-2 mb-2 p-1 border-2 border-blue-800 bg-blue-100">Book</li>
                 <li>
                     <diV class="relative">
                         <img src="assets/book.jpg" alt="Gambar buku" class="w-full">
-                        <p class="absolute bottom-2 right-2 text-xs text-white">Sumber: <a href="www.freepik.com">www.freepik.com</a></p>
+                        <p class="absolute bottom-2 right-2 text-xs text-white">Sumber: <a href="https://www.freepik.com">www.freepik.com</a></p>
                     </diV>
-                <li class="text-center font-bold text-blue-800 mt-2 mb-2 border-2 border-blue-800 bg-blue-100">Magazine</li>
+                <li class="text-lg text-center font-bold text-blue-800 mt-2 mb-2 p-1 border-2 border-blue-800 bg-blue-100">Magazine</li>
                 <li>
                     <div class="relative">
                         <img src="assets/magazine.jpg" alt="Gambar majalah">
-                        <p class="absolute bottom-2 right-2 text-xs text-white">Sumber: <a href="www.freepik.com">www.freepik.com</a></p>
+                        <p class="absolute bottom-2 right-2 text-xs text-white">Sumber: <a href="https://www.freepik.com">www.freepik.com</a></p>
                     </div>
                 </li>
              </ol>
@@ -73,13 +77,13 @@
           <div class="p-4">
             <h2>Message Us</h2>
 
-            <form class="" onsubmit="submitFunction(event)">
-                <table class="border-separate border-spacing-4 w-full"> <!--Dibuat tabel agar rapih bentuknya-->
+            <form class="w-1/2" submitFunction(event)">
+                <table class=" border-separate border-spacing-4 w-full"> <!--Dibuat tabel agar rapih bentuknya-->
                     <tbody>
                         <tr>
                             <td><label>Nama</label></td>
                             <td>:</td>
-                            <td><input type="text" placeholder="Nama" id="guestName" class="border-2 p-1"></td>
+                            <td><input type="text" placeholder="Nama" id="guestName" class="w-full max-w-full p-1"></td>
                         </tr>
                         <tr>
                             <td><label>Tanggal Lahir</label></td>
@@ -98,13 +102,13 @@
                             <td style="vertical-align: top;"><label>Pesan</label></td>
                             <td style="vertical-align: top;">:</td>
                             <td>
-                                <textarea rows="5" cols="30" placeholder="Pesan" id="guestMessage" class="border-2 caret-indigo-500"></textarea>
+                                <textarea rows="5" placeholder="Pesan" id="guestMessage" class="border-2 w-full max-w-full caret-indigo-500"></textarea>
                             </td>
                         </tr>
                     </tbody>
                 </table>
                 <br>
-                <button class="button text-blue-900 border-solid p-2 rounded-xl bg-blue-300 hover:bg-blue-500" type="submit">Submit</button>
+                <button class="button text-blue-900 border-2 border-double border-blue-800 m-2 p-2 rounded-xl bg-blue-300 hover:bg-blue-400 font-semibold transition active:scale-95" type="submit">Submit</button>
             </form>
             <br>
 
