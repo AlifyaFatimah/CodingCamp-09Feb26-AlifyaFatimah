@@ -3,9 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Healing</title>
 </head>
 <body>
+    <header class="flex flex-row justify-between bg-indigo-900 sticky top-0">
+        <div class="text-2xl m-2"><i class="material-icons">healing</i></div>
+        
+        <nav class="text-2x1 text-white">
+            <ul class="flex gap-8 flex-wrap m-2">
+                <li class=""><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#product">Our Product</a></li>
+                <li><a href="#message">Message Us</a></li>
+            </ul>    
+        </nav>
+    </header>
     
+    <main class="text-justify">
+        <section id="home" class="bg-blue-100 scroll-mt-20">
+            <div class="p-4">
+                <h2 id="welcome-speech"></h2>
+                <p>We are a company committed to providing high-quality books that you can enjoy during your leisure time, whether you are looking for entertainment, inspiration, or a meaningful reading experience. We believe that reading is not only a way to relax, but also a wonderful way to expand your knowledge, explore new ideas, and discover different perspectives. As the saying goes, “A good book is a good friend,” and we hope you will find the perfect companion here through the wide range of books we offer. Our goal is to make it easy for every reader to find something they truly enjoy, from timeless classics to modern favorites. Thank you for visiting our website, and we hope you find exactly what you are looking for. Enjoy your reading journey with us.</p>
+            </div>
+        </section>
+
+        <section id="about" class="bg-blue-200 scroll-mt-20">
+            <div class="p-4">
+                <h2>Vision</h2>
+                <p>Our vision is to support our country’s growth by providing people with quality books and encouraging a culture of reading.</p>
+   
+                <h2>Mision</h2>
+                <p>To achieve our vision, we are committed to:
+                 <ol class="list-decimal list-inside">
+                    <li>Creating high-quality book content that is valuable, engaging, and enjoyable to read.</li>
+                    <li>Providing books with excellent quality to ensure a satisfying reading experience.</li>
+                    <li>Printing our books using high-quality paper for better durability and comfort.</li>
+                    <li>Designing attractive and well-crafted book covers that reflect the value of the story inside.</li>
+                    <li>Distributing our books widely, reaching readers from coastal areas to mountain regions.</li>
+                 </ol>
+                </p>
+            </div>
+        </section>
+
+        <section id="product" class="bg-blue-300 scroll-mt-20">
+            <div class="p-4">
+            <h2>Our Product</h2>
+             <ol>
+                <li>Book</li>
+                <li>Comic</li>
+                <li>Magazine</li>
+             </ol>
+            </div>
+        </section>
+
+        <section id="message" class="bg-sky-50 scroll-mt-20">
+          <div class="p-4">
+            <h2>Message Us</h2>
+
+            <form class="" onsubmit="submitFunction(event)">
+                <table> <!--Dibuat tabel agar rapih bentuknya-->
+                    <tbody>
+                        <tr>
+                            <td><label>Nama</label></td>
+                            <td>:</td>
+                            <td><input type="text" placeholder="Nama" id="guestName" class="border-2 p-1"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Tanggal Lahir</label></td>
+                            <td>:</td>
+                            <td><input type="date" id="guestTTL"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Jenis Kelamin</label></td>
+                            <td>:</td>
+                            <td>
+                                <input type="radio" name="guestGender" value="Laki-laki">Laki-laki 
+                                <input type="radio" name="guestGender" value="Perempuan">Perempuan
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top;"><label>Pesan</label></td>
+                            <td style="vertical-align: top;">:</td>
+                            <td>
+                                <textarea rows="5" cols="30" placeholder="Pesan" id="guestMessage" class="border-2 caret-indigo-500"></textarea>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <button class="button text-blue-900 border-solid p-2 rounded-xl bg-blue-300 hover:bg-blue-500" type="submit">Submit</button>
+            </form>
+            <br>
+
+            <p id="reply-message" class="font-semibold border-solid p-2 rounded-md"></p>
+          </div>
+          <br>
+        </section>
+
+        <footer class="text-white text-end text-xs p-2 bg-indigo-900">Created by Fia for RevoU
+            <br>
+        </footer>
+
+    </main> 
+
+    <script src="js/script.js"></script>
 </body>
 </html>
