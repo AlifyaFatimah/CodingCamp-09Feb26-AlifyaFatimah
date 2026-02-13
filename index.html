@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-pt-12"> <!--supaya waktu scroll tidak menutupi bagian-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,12 @@
     <title>Healing</title>
 </head>
 <body>
-    <header class="flex flex-row justify-between bg-indigo-900 sticky top-0">
-        <div class="text-2xl m-2"><i class="material-icons">healing</i></div>
+    <header class="flex flex-row justify-between bg-indigo-800 sticky top-0 z-50">
+        <div class="p-2"><img class="h-10 w-auto object-contain" src="assets/logo.png" alt="logo healing"></div>
         
         <nav class="text-2x1 text-white">
-            <ul class="flex gap-8 flex-wrap m-2">
-                <li class=""><a href="#home">Home</a></li>
+            <ul class="flex gap-8 flex-wrap m-4">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#product">Our Product</a></li>
                 <li><a href="#message">Message Us</a></li>
@@ -23,14 +23,14 @@
     </header>
     
     <main class="text-justify">
-        <section id="home" class="bg-blue-100 scroll-mt-20">
+        <section id="home" class="bg-blue-100">
             <div class="p-4">
                 <h2 id="welcome-speech"></h2>
                 <p>We are a company committed to providing high-quality books that you can enjoy during your leisure time, whether you are looking for entertainment, inspiration, or a meaningful reading experience. We believe that reading is not only a way to relax, but also a wonderful way to expand your knowledge, explore new ideas, and discover different perspectives. As the saying goes, “A good book is a good friend,” and we hope you will find the perfect companion here through the wide range of books we offer. Our goal is to make it easy for every reader to find something they truly enjoy, from timeless classics to modern favorites. Thank you for visiting our website, and we hope you find exactly what you are looking for. Enjoy your reading journey with us.</p>
             </div>
         </section>
 
-        <section id="about" class="bg-blue-200 scroll-mt-20">
+        <section id="about" class="bg-blue-200">
             <div class="p-4">
                 <h2>Vision</h2>
                 <p>Our vision is to support our country’s growth by providing people with quality books and encouraging a culture of reading.</p>
@@ -48,23 +48,33 @@
             </div>
         </section>
 
-        <section id="product" class="bg-blue-300 scroll-mt-20">
+        <section id="product" class="bg-blue-300">
             <div class="p-4">
             <h2>Our Product</h2>
              <ol>
-                <li>Book</li>
-                <li>Comic</li>
-                <li>Magazine</li>
+                <li class="text-center font-bold text-blue-800 mt-2 mb-2 border-2 border-blue-800 bg-blue-100">Book</li>
+                <li>
+                    <diV class="relative">
+                        <img src="assets/book.jpg" alt="Gambar buku" class="w-full">
+                        <p class="absolute bottom-2 right-2 text-xs text-white">Sumber: <a href="www.freepik.com">www.freepik.com</a></p>
+                    </diV>
+                <li class="text-center font-bold text-blue-800 mt-2 mb-2 border-2 border-blue-800 bg-blue-100">Magazine</li>
+                <li>
+                    <div class="relative">
+                        <img src="assets/magazine.jpg" alt="Gambar majalah">
+                        <p class="absolute bottom-2 right-2 text-xs text-white">Sumber: <a href="www.freepik.com">www.freepik.com</a></p>
+                    </div>
+                </li>
              </ol>
             </div>
         </section>
 
-        <section id="message" class="bg-sky-50 scroll-mt-20">
+        <section id="message" class="bg-sky-50">
           <div class="p-4">
             <h2>Message Us</h2>
 
             <form class="" onsubmit="submitFunction(event)">
-                <table> <!--Dibuat tabel agar rapih bentuknya-->
+                <table class="border-separate border-spacing-4 w-full"> <!--Dibuat tabel agar rapih bentuknya-->
                     <tbody>
                         <tr>
                             <td><label>Nama</label></td>
